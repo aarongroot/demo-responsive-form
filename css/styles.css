@@ -1,2 +1,161 @@
-/* dev styles go here */
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-container{
+    padding: 1rem;
+}
+
+
+/* ************************************Typography************************* */
+
+h2,
+h3{
+    color: crimson;
+    text-transform: uppercase;
+    font-size: 3.75rem;
+    font-weight: 200;
+}
+
+h3{
+    font-size: 2.8rem;
+}
+
+p{
+    margin-bottom: 1.5rem;
+}
+
+/* **********************************HEader***********************************/
+
+header{
+    background-color: black;
+}
+
+header svg{
+    fill: aliceblue;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+.menu a:hover,
+.menu a:active{
+    color: crimson;
+}
+
+.menu li{
+    line-height: 2rem;
+    flex: 1 0 50%;
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ***************************************Form********************************** */
+
+fieldset{
+    padding: 0;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+
+form div{
+    margin-bottom: 1.5rem;
+}
+
+form p{
+    font-weight: bold;
+}
+
+input,
+textarea{
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #e8e8e8;
+    padding: 0.5rem;
+}
+
+textarea{
+    resize: vertical;
+    min-height: 18.75rem;
+    margin-bottom: 3rem;
+}
+
+input[type="checkbox"]{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+label[for="accept"]{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input[type="submit"]{
+    width: unset;
+    border: none;
+    background-color: #fff;
+    box-shadow: none;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: padding-left 0.5s ease;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: crimson;
+    padding-left: 1.25rem;
+}
+
+/* **************************************Media Queries***************************************/
+
+@media screen and (min-width: 78.75rem) {
+    
+    .menu li{
+        flex: 0 0 0;
+    }
+
+    .menu{
+        gap: 1.5rem;
+    }
+
+    fieldset{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    
+    fieldset div{
+        flex: 1 0 calc(50% - 1.5rem);
+    }
+
+    h3{
+        width: 100%;
+    }
+    textarea{
+      width: calc(50% - 0.75rem);
+    }
+
+    .inner-container{
+        max-width: 75rem;
+        padding: 1rem 0;
+        margin: 0 auto;
+    }
+}
